@@ -95,23 +95,24 @@ function showCategories(arr) {
         let val = arr[i];
         switch (val) {
             case '1':
-                apear("general")
+                apear("general");
                 break;
             case '2':
-                apear("ciberseguridad")
+                apear("ciberseguridad");
+                break;
             case '3':
-                console.log('3+');
+                apear("programacion")
                 break;
             case '4':
-                console.log('4+');
+                apear("ciencias")
                 break;
             case '5':
-                console.log('5+');
+                apear("matematicas")
                 break;
             default:
-                console.log('Today only, 3 + 1 free!!');
+                console.log('flag 4');
         }
-        // Expected output: The fourth item is free!!
+        
     }
 }
 

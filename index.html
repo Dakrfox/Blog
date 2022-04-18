@@ -21,46 +21,40 @@
     <div class="header header-fixed unselectable header-animated">
         <div class="header-brand">
             <div class="nav-item no-hover">
-                <h6 class="title">Nicolás Martínez</h6>
+                <h6 class="title">Nicolas Martinez</h6>
             </div>
+            <div class="nav-item nav-btn" id="header-btn"> <span></span> <span></span> <span></span> </div>
         </div>
         <div class="header-nav" id="header-menu">
             <div class="nav-left">
-                <div class="nav-item text-center"> <a href="https://twitter.com/F_N22_" target="blank_"> <span class="icon"> <i class="fab fa-wrapper fa-twitter"
-                                aria-hidden="true"></i> </span> </a> </div>
-                <div class="nav-item text-center"> <a href="https://github.com/Relibarion" target="blank_"> <span class="icon"> <i class="fab fa-wrapper fa-github"
-                                aria-hidden="true"></i> </span> </a> </div>
-                <div class="nav-item text-center"> <a href="https://www.linkedin.com/in/fn22/" target="blank_"> <span class="icon" > <i
+                <div class="nav-item text-center"> <a href="https://twitter.com/dakrfox"> <span class="icon"> <i
+                                class="fab fa-wrapper fa-twitter" aria-hidden="true"></i> </span> </a> </div>
+                <div class="nav-item text-center"> <a href="https://linkedin.com/in/dakrfox"> <span class="icon"> <i
                                 class="fab fa-wrapper fa-linkedin" aria-hidden="true"></i> </span> </a> </div>
+                <div class="nav-item text-center"> <a href="https://github.com/relibarion"> <span class="icon"> <i
+                                class="fab fa-wrapper fa-github" aria-hidden="true"></i> </span> </a> </div>
+            </div>
+            <div class="nav-right">
+                <div class="nav-item has-sub toggle-hover text-orange-400" id="dropdown">
+                    <a class="nav-dropdown-link">Menu</a>
+                    <ul class="dropdown-menu dropdown-animated" role="menu">
+                        <li role="menu-item"><a href="#about-me">About me</a></li>
+                        <li role="menu-item"><a href="#skills">Skills</a></li>
+                        <li role="menu-item"><a href="#contact-me">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-    <section class="full-screen w-100 h-100 u-flex " id="fullscreen">
-        <div class="title w-100">
-            <h1 class="title_text u-text-center">FR0Z-N22</h1>
-        </div>
-        <div class="card w-80">
-            <div class="card__container">
-                <div class="card__image">
-                </div>
-                <div class="card__title-container">
-                    <p class="title">Este es mi blog de aprendizaje</p>
-                    <span class="subtitle">Ciberseguridad | Programacion | Ciencias | Matematicas</span>
-                </div>
-            </div>
-            <div class="content">
-                <p>Cuando empece tampoco tenia idea de donde empezar, esta pagina te mostrara todo lo que he aprendido y
-                    aprendere en un orden cronologico acerca de la informatica. </p>
-            </div>
-            <div class="card__action-bar u-center">
-            </div>
-            <div class="card__footer">
-                <div class="u-text-center"><span><i>Libre y accesible.</i> <span class="icon"><i
-                                class="fa fa-wrapper fa-heart animated bounceIn" aria-hidden="true"></i></span> </span>
-                </div>
+    <section class="hero fullscreen">
+        <div class="hero-body">
+            <div class="mx-auto">
+                <h1 class="title uppercase">FR0Z-N22 <i class="fas fa-bug fa-bounce"></i></h1>
+                <h3 class="subtitle text-gray-600">This is my tech journey!</h3>
             </div>
         </div>
     </section>
+
     <section class="container-lines">
         <div class="lines">
             <div class=diamond></div>
@@ -68,272 +62,281 @@
     </section>
     <div class="row ">
         <div class="col-3 ">
-            <div class="content">
-                <h5>AFINAR</h5>
-                <div class="col-lg-6">
-                    <div class="form-ext-control form-ext-checkbox">
-                        <input id="check-dark" class="form-ext-input form-ext-input--dark" type="checkbox" value="1" />
-                        <label class="form-ext-label" for="check-dark">General</label>
-                    </div>
-                    <div class="form-ext-control form-ext-checkbox">
-                        <input id="check-primary" class="form-ext-input form-ext-input--primary" type="checkbox"
-                            value="2" />
-                        <label class="form-ext-label" for="check-primary">Ciberseguridad</label>
-                    </div>
-                    <div class="form-ext-control form-ext-checkbox">
-                        <input id="check-link" class="form-ext-input form-ext-input--link" type="checkbox" value="3" />
-                        <label class="form-ext-label" for="check-link">Programacion</label>
-                    </div>
-                    <div class="form-ext-control form-ext-checkbox">
-                        <input id="check-info" class="form-ext-input form-ext-input--info" type="checkbox" value="4" />
-                        <label class="form-ext-label" for="check-info">Ciencias</label>
-                    </div>
-                    <div class="form-ext-control form-ext-checkbox">
-                        <input id="check-success" class="form-ext-input form-ext-input--success" type="checkbox"
-                            value="5" />
-                        <label class="form-ext-label" for="check-success">Matematicas</label>
-                    </div>
+            <div class="card">
+                <div class="card__header ">
+                    <h5 class="font-bold px-3">Filter
+                    </h5>
                 </div>
-                <h5>ORDENAR POR FECHA</h5>
-                <div class="col-lg-6">
-                    <div class="input-control" style="min-width: 165px;">
-                        <select class="select" placeholder="Dropdown Normal">
-                            <option value="1">menor a mayor</option>
-                            <option value="2">mayor a menor</option>
-                        </select>
+                <div class="content">
+                    <div class="col-lg-6">
+                        <div class="form-ext-control form-ext-checkbox">
+                            <input id="check-dark" class="form-ext-input form-ext-input--dark" type="checkbox"
+                                value="1" />
+                            <label class="form-ext-label" for="check-dark">General</label>
+                        </div>
+                        <div class="form-ext-control form-ext-checkbox">
+                            <input id="check-primary" class="form-ext-input form-ext-input--primary" type="checkbox"
+                                value="2" />
+                            <label class="form-ext-label" for="check-primary">CyberSecurity</label>
+                        </div>
+                        <div class="form-ext-control form-ext-checkbox">
+                            <input id="check-link" class="form-ext-input form-ext-input--link" type="checkbox"
+                                value="3" />
+                            <label class="form-ext-label" for="check-link">Development</label>
+                        </div>
+                        <div class="form-ext-control form-ext-checkbox">
+                            <input id="check-info" class="form-ext-input form-ext-input--info" type="checkbox"
+                                value="4" />
+                            <label class="form-ext-label" for="check-info">Science</label>
+                        </div>
+                        <div class="form-ext-control form-ext-checkbox">
+                            <input id="check-success" class="form-ext-input form-ext-input--success" type="checkbox"
+                                value="5" />
+                            <label class="form-ext-label" for="check-success">Math</label>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
         <div class="col-6 uppercase">
             <div class="card">
                 <div class="content u-text-center pt-3">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bolt"
-                        class="svg-inline--fa fa-bolt fa-w-10 fa-wrapper text-blue-600 bg-blue-100 p-3" role="img"
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
-                        style="border-radius: 100%; height: 4.75rem; width: 4.75rem;">
-                        <path fill="currentColor"
-                            d="M296 160H180.6l42.6-129.8C227.2 15 215.7 0 200 0H56C44 0 33.8 8.9 32.2 20.8l-32 240C-1.7 275.2 9.5 288 24 288h118.7L96.6 482.5c-3.6 15.2 8 29.5 23.3 29.5 8.4 0 16.4-4.4 20.8-12l176-304c9.3-15.9-2.2-36-20.7-36z">
-                        </path>
+                    <i class="fas fa-book fa-3x"></i>
+                    <path fill="currentColor"
+                        d="M296 160H180.6l42.6-129.8C227.2 15 215.7 0 200 0H56C44 0 33.8 8.9 32.2 20.8l-32 240C-1.7 275.2 9.5 288 24 288h118.7L96.6 482.5c-3.6 15.2 8 29.5 23.3 29.5 8.4 0 16.4-4.4 20.8-12l176-304c9.3-15.9-2.2-36-20.7-36z">
+                    </path>
                     </svg>
-                    <p id="projectname" class="title mt-2 mb-0">Estas no son clases.</p>
-                    <p>Esto es un recorrido que atravesamos juntos.</p>
+                    <p id="projectname" class="title mt-2 mb-0">Those post are not class.</p>
+                    <p>this is a travel.</p>
                 </div>
             </div>
         </div>
         <div class="col-3 uppercase">
         </div>
     </div>
+    <!--Last post-->
     <div class="row">
         <div class="col-3 uppercase">
             <div class="uppercase"></div>
         </div>
-        <div class="col-6 uppercase" >
-            <div class="card card--slide-up ciberseguridad">
-                <div class="card__container">
-                    <div class="card__image"
-                        style="background-image: url(&quot;https://images.unsplash.com/photo-1561344640-2453889cde5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=667&q=80&amp;blur&quot;);">
-                    </div>
+        <div class="col-6 uppercase">
+            <div class="card">
+                <div class="card__header">
+                    <p class="font-bold px-3">Python for CyberSecurity <i class="fas fa-align-left text-primary"></i>
+                    </p>
                 </div>
-                <div class="card__mobile-title">
-                    <div class="content">
-                        <div class="tile">
-                            <div class="tile__container">
-                                <p class="tile__title">Nivel -1 <mark>General</mark></p>
-                                <p class="tile__subtitle">By Nicolas Martinez</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="content">
+                    <p>This is some sample text spam spam spam spam spam spam spam. <a href="!#">#place</a><a
+                            href="!#">#holder</a><a href="!#">@Cirrus</a></p>
                 </div>
-                <div class="card__body content">
-                    <p>Fundamentos de sistemas, logica y justo lo necesario para que teoricamente estemos en la misma
-                        pagina...</p>
+                <div class="card__footer level content">6:32 PM - 3 Jul 18</div>
+                <div class="card__action-bar u-center">
+                    <button class="btn-transparent outline">1</button>
+                    <button class="btn-transparent outline">2</button>
+                    <button class="btn-transparent outline">3</button>
                 </div>
-                <div class="card__footer content">subido el 2 de octubre de 1950</div>
             </div>
         </div>
         <div class="col-3 uppercase">
+            <div class="uppercase"></div>
         </div>
     </div>
+    <!--another post-->
     <div class="row">
         <div class="col-3 uppercase">
             <div class="uppercase"></div>
         </div>
         <div class="col-6 uppercase ">
-            <div class="card card--slide-up ">
-                <div class="card__container">
-                    <div class="card__image"
-                        style="background-image: url(&quot;https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1255&q=80&amp;blur&quot;);">
-                    </div>
+            <div class="card">
+                <div class="card__header">
+                    <p class="font-bold px-3">Javascript, Ecmascript & Typescript <i
+                            class="fas fa-align-left text-link"></i></i></p>
                 </div>
-                <div class="card__mobile-title">
-                    <div class="content">
-                        <div class="tile">
-                            <div class="tile__container">
-                                <p class="tile__title">Punto de Inicio <mark>General</mark> </p>
-                                <p class="tile__subtitle">By Nicolas Martinez</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="content">
+                    <p>This is some sample text spam spam spam spam spam spam spam. <a href="!#">#place</a><a
+                            href="!#">#holder</a><a href="!#">@Cirrus</a></p>
                 </div>
-                <div class="card__body content">
-                    <p>Aqui empezara cualquier rama de todo, este post es mas enfocado a como escoger, entender y
-                        cuestionarte
-                        si estas en el lugar al que perteneces
-                    </p>
+                <div class="card__footer level content">6:32 PM - 3 Jul 18</div>
+                <div class="card__action-bar u-center">
+                    <button class="btn-transparent outline">Cancel</button>
+                    <button class="btn-transparent outline">Save</button>
+                    <button class="btn-transparent outline">Post</button>
                 </div>
-                <div class="card__footer content">subido el 2 de octubre de 1950</div>
             </div>
         </div>
         <div class="col-3 uppercase">
         </div>
     </div>
+    <!--another post-->
     <div class="row disapear">
         <div class="col-3 ">
         </div>
         <div class="col-6 uppercase">
-            <div class="card card--slide-up">
-                <div class="card__container">
-                    <div class="card__image"
-                        style="background-image: url(&quot;https://images.unsplash.com/photo-1607419726991-5fc7e74cda67?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80&amp;blur&quot;);">
-                    </div>
+            <div class="card">
+                <div class="card__header">
+                    <p class="font-bold px-3">Programming Fundamentals <i class="fas fa-play text-link"></i></i></p>
                 </div>
-                <div class="card__mobile-title">
-                    <div class="content">
-                        <div class="tile">
-                            <div class="tile__container">
-                                <p class="tile__title">Nivel 0<mark>General</mark></p>
-                                <p class="tile__subtitle">By Nicolas Martinez</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="content">
+                    <p>This is some sample text spam spam spam spam spam spam spam. <a href="!#">#place</a><a
+                            href="!#">#holder</a><a href="!#">@Cirrus</a></p>
                 </div>
-                <div class="card__body content">
-                    <p>Desde este curso estaremos hablando el mismo idioma y partiremos de aqui para decidir que camino
-                        o caminos escoger...</p>
+                <div class="card__footer level content">6:32 PM - 3 Jul 18</div>
+                <div class="card__action-bar u-center">
+                    <button class="btn-transparent outline">Cancel</button>
+                    <button class="btn-transparent outline">Save</button>
+                    <button class="btn-transparent outline">Post</button>
                 </div>
-                <div class="card__footer content">subido el 2 de octubre de 1950</div>
             </div>
         </div>
         <div class="col-3 uppercase">
         </div>
     </div>
+    <!--another post-->
     <div class="row disapear">
         <div class="col-3 uppercase">
             <div class="uppercase"></div>
         </div>
         <div class="col-6 uppercase">
-            <div class="card card--slide-up general">
-                <div class="card__container">
-                    <div class="card__image"
-                        style="background-image: url(&quot;https://images.unsplash.com/photo-1561344640-2453889cde5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=667&q=80&amp;blur&quot;);">
-                    </div>
+            <div class="card">
+                <div class="card__header">
+                    <p class="font-bold px-3">Math Essentials <i class="fas fa-align-left text-success"></i></p>
                 </div>
-                <div class="card__mobile-title">
-                    <div class="content">
-                        <div class="tile">
-                            <div class="tile__container">
-                                <p class="tile__title">Nivel -1 <mark>General</mark></p>
-                                <p class="tile__subtitle">By Nicolas Martinez</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="content">
+                    <p>This is some sample text spam spam spam spam spam spam spam. <a href="!#">#place</a><a
+                            href="!#">#holder</a><a href="!#">@Cirrus</a></p>
                 </div>
-                <div class="card__body content">
-                    <p>Fundamentos de sistemas, logica y justo lo necesario para que teoricamente estemos en la misma
-                        pagina...</p>
+                <div class="card__footer level content">6:32 PM - 3 Jul 18</div>
+                <div class="card__action-bar u-center">
+                    <button class="btn-transparent outline">Cancel</button>
+                    <button class="btn-transparent outline">Save</button>
+                    <button class="btn-transparent outline">Post</button>
                 </div>
-                <div class="card__footer content">subido el 2 de octubre de 1950</div>
             </div>
         </div>
         <div class="col-3 uppercase">
         </div>
     </div>
+    <!--First post-->
     <div class="row disapear">
         <div class="col-3 uppercase">
             <div class="uppercase"></div>
         </div>
         <div class="col-6 uppercase general" onclick="location.href='pages/1.html'">
-            <div class="card card--slide-up general">
-                <div class="card__container">
-                    <div class="card__image"
-                        style="background-image: url(&quot;https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1255&q=80&amp;blur&quot;);">
-                    </div>
+            <div class="card">
+                <div class="card__header">
+                    <i class="fas fa-diamond"></i>
+                    <p class="font-bold px-3">The right place <i class="fas fa-align-left"></i></p>
                 </div>
-                <div class="card__mobile-title">
-                    <div class="content">
-                        <div class="tile">
-                            <div class="tile__container">
-                                <p class="tile__title">Punto de Inicio <mark>General</mark> </p>
-                                <p class="tile__subtitle">By Nicolas Martinez</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="content">
+                    <p>How you find if this tech world fit with you. <a href="!#">#place</a><a href="!#">#holder</a><a
+                            href="!#">@FR0Z-N22</a></p>
                 </div>
-                <div class="card__body content">
-                    <p>Aqui empezara cualquier rama de todo, este post es mas enfocado a como escoger, entender y
-                        cuestionarte
-                        si estas en el lugar al que perteneces
-                    </p>
+                <div class="card__footer level content">6:32 PM - 3 Jul 18</div>
+                <div class="card__action-bar u-center">
+                    <button class="btn-transparent outline">Cancel</button>
+                    <button class="btn-transparent outline">Save</button>
+                    <button class="btn-transparent outline">Post</button>
                 </div>
-                <div class="card__footer content">subido el 5 de febrero de 2022</div>
             </div>
         </div>
         <div class="col-3 uppercase">
         </div>
     </div>
+
     <div class="row">
         <div class="col-3"></div>
         <div class="col-6 u-flex u-justify-center">
-            <button id="loadmore" class="outline btn-dark" onclick="loadmore()">LOAD MORE</button>
+            <div class="card" style="width: 100%;">
+                <div class="card__action-bar u-center">
+                    <button class="btn-dark outline">Go GitHub</button>
+                    <button id="loadmore" class="outline" onclick="loadmore()">LOAD MORE</button>
+                </div>
+            </div>
+
         </div>
         <div class="col-3"></div>
     </div>
-    <footer class="footer">
-        <h4 class="footer__h4">FR0Z-N22</h4>
-        <div class="row">
-            <div class="col-4 ">
-                <ul class="no-bullets">
-                    <h5 class="no-bullets__h5">Contacto</h5>
-                    <li>
-                        <p> <a href="">YouTube</a> <i class="fab fa-wrapper fa-youtube" aria-hidden="true"></i></p>
-                    </li>
-                        <p> <a href="">Twitch</a> <i class="fab fa-wrapper fa-twitch" aria-hidden="true"></i></p>
-                    </li>
-                    <li>
-                        <p> <a href="https://github.com/Relibarion">GitHub</a> <i class="fab fa-wrapper fa-github" aria-hidden="true"></i></p>
-                    </li>
-                    <li>
-                        <p> <a>fr0z-n22@protonmail.com</a></p>
-                    </li>
-                </ul>
+    <!--hero hire me-->
+    <div class="hero bg-orange-400" id="contact-me">
+        <div class="hero-body">
+            <div class="content">
+                <h3 class="title white">Do you wanna hire me?.</h3>
+                <h5 class="subtitle text-gray-300">Here you can find me <br>as a freelance.</h5>
+                <div class="u-items u-flex movil">
+                    <button class="u-shadow bg-light"
+                        onclick="location.href='https://linkedin.com/in/dakrfox'">LinkedIn</button>
+                    <button class="u-shadow bg-light"
+                        onclick="location.href='https://github.com/relibarion'">Upwork</button>
+                        <button class="u-shadow bg-light"
+                        onclick="location.href='https://github.com/relibarion'">Freelancer</button>
+                </div>
             </div>
-            <div class="col-4">
-                <p><mark>FR0Z-N22</mark> es un nombre de usuario que hace referencia a Nicolas Martinez. <br>
-                    Esta pagina tiene fines netamente educativos, por eso no hay ninguna publicidad de
-                    ningun tipo , sin embargo, cada aprendizaje nuevo
-                    tiene un link de <b> Patreon </b>y de <b>Buy Me a Coffee</b> en caso de que quieras colaborarme
-                    donde recibiras
-                    un <mark>Plus</mark> que aunque no es necesario siempre
-                    aporta.
-                </p>
-            </div>
-            <div class="col-4">
-                <h5 class="no-bullets__h5">Preguntas y Respuestas</h5>
-                <ul>
-                    <li>
-                        <p> <a href="">Twitter</a> <i class="fab fa-wrapper fa-twitter" aria-hidden="true"></i></p>
-                    </li>
-                    <li>
-                        <p> <a href="">Reddit</a> <i class="fab fa-wrapper fa-reddit" aria-hidden="true"></i></p>
-                    </li>
-                    <li>
-                </ul>
+            <div class="u-items-flex-end u-inline-flex">
+                <button class="u-shadow bg-light"
+                    onclick="location.href='https://linkedin.com/in/dakrfox'">LinkedIn</button>
+                <button class="u-shadow bg-light"
+                    onclick="location.href='https://github.com/relibarion'">Upwork</button>
+                    <button class="u-shadow bg-light"
+                    onclick="location.href='https://github.com/relibarion'">Freelancer</button>
             </div>
         </div>
+    </div>
+    <!--footer--->
+    <footer class="footer bg-light text-dark">
+        <h6 class="footer__title black uppercase">Dakrfox</h6>
+        <div class="content">
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col-4">
+                    <ul class="no-bullets">
+                        <a href="https://wa.me/message/RRBBM3ZJ7P4BJ1">
+                            <li class="footer__list-item">Whatsapp</li>
+                        </a>
+                        <a href="https://t.me/dakrfox">
+                            <li class="footer__list-item">Telegram</li>
+                        </a>
+                        <a href="https://instagram.com/dakrfox">
+                            <li class="footer__list-item">Instagram</li>
+                        </a>
+                        <ul>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul class="no-bullets">
+                        <a href="#test-modal">
+                            <li class="footer__list-item">Blog</li>
+                        </a>
+                        <a href="mailto:dakrfox@Dakrfox.com">
+                            <li class="footer__list-item">Email</li>
+                        </a>
+                        <a href="#test-modal">
+                            <li class="footer__list-item">Reviews</li>
+                        </a>
+                        <ul>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul class="no-bullets">
+                        <a href="#test-modal">
+                            <li class="footer__list-item">FAQ</li>
+                        </a>
+                        <a href="#">
+                            <li class="footer__list-item">Streams</li>
+                        </a>
+                        <ul>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="subtitle">© 2021 Dakrfox</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="js/index.js"></script>
+
 </body>
 
 </html>
